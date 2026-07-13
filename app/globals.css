@@ -84,6 +84,12 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--accent); outli
 .project-content { min-width: 0; }
 .project-meta { display: flex; justify-content: space-between; gap: 18px; color: var(--muted); font-size: 10px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }
 .project-content h3 { max-width: 830px; margin: 14px 0 18px; font-family: var(--serif); font-size: clamp(30px, 3.7vw, 46px); font-weight: 500; letter-spacing: -.025em; line-height: 1.12; }
+.featured-project-top { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 34px; align-items: start; }
+.featured-project-copy { min-width: 0; }
+.featured-project-copy h3, .featured-project-copy .project-summary, .featured-project-copy .industry-value { max-width: none; }
+.research-overview-figure { margin: 12px 0 0; }
+.research-overview-figure img { display: block; width: 100%; aspect-ratio: 1; border-radius: 5px; object-fit: contain; background: #fbfaf8; }
+.research-overview-figure figcaption { margin-top: 9px; color: var(--muted); font-size: 10px; font-weight: 700; letter-spacing: .05em; line-height: 1.45; text-align: center; text-transform: uppercase; }
 .project-summary { max-width: 820px; margin: 0; color: var(--muted); font-family: var(--serif); font-size: 18px; line-height: 1.65; }
 .industry-value { max-width: 820px; margin-top: 23px; padding: 17px 20px; background: var(--light); }
 .industry-value strong { display: block; margin-bottom: 5px; color: var(--blue); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
@@ -158,6 +164,8 @@ footer { display: flex; justify-content: space-between; padding: 24px max(24px, 
   .about-section { grid-template-columns: 210px 1fr; gap: 42px; }
   .section-intro.split { grid-template-columns: 1fr; gap: 22px; }
   .scholar-link { justify-self: start; }
+  .featured-project-top { grid-template-columns: 1fr; }
+  .research-overview-figure { width: min(320px, 100%); margin-top: 4px; }
   .background-grid { grid-template-columns: 1fr; }
   .background-grid > div + div { border-left: 0; border-top: 1px solid var(--line); }
   .background-grid > div, .background-grid > div + div { padding: 24px 0; }
