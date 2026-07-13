@@ -94,80 +94,24 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="profile-section" id="profile" aria-labelledby="profile-title">
-          <div className="section-intro split profile-intro">
-            <div>
-              <p className="section-label">Technical profile</p>
-              <h2 id="profile-title">I turn road and traffic complexity into testable AV systems.</h2>
+        <section className="profile-section technical-profile-section" id="profile" aria-labelledby="profile-title">
+          <h2 className="visually-hidden" id="profile-title">Technical profile: from world models to safe autonomous driving</h2>
+          <figure className="technical-profile-figure">
+            <div className="technical-profile-viewport">
+              <a href="/technical-profile.png" target="_blank" rel="noreferrer" aria-label="Open the technical profile figure at full resolution">
+                <img
+                  className="technical-profile-image"
+                  src="/technical-profile.png"
+                  alt="Hao Zhang's autonomous driving research profile, connecting digital twins and HD mapping, scenario engineering, AV control and decision-making, and safety analysis and validation around a transportation digital twin."
+                />
+              </a>
             </div>
-            <p>
-              My strength is working across the autonomy stack: building the world, generating the hard cases, designing vehicle behavior, and measuring whether the system is actually safe.
-            </p>
-          </div>
-
-          <figure className="capability-map" aria-labelledby="capability-map-title">
             <figcaption>
-              <div>
-                <span>Research &amp; engineering stack</span>
-                <strong id="capability-map-title">Transportation-aware autonomy</strong>
-              </div>
-              <p>Model the world → generate edge cases → control the vehicle → validate safety</p>
+              <span>Research and engineering capabilities across the autonomous-driving stack.</span>
+              <span className="technical-profile-hint">Swipe to explore on smaller screens.</span>
+              <a href="/technical-profile.png" target="_blank" rel="noreferrer">View full resolution <Arrow /></a>
             </figcaption>
-
-            <div className="capability-flow">
-              <article>
-                <div className="capability-stage"><span>01</span><small>Model the world</small></div>
-                <h3>Digital twins &amp;<br />HD mapping</h3>
-                <p>Reconstruct simulation-ready environments and lane-level vector maps from field and global geospatial data.</p>
-                <div className="capability-tools" aria-label="Digital twin and mapping tools">
-                  <span>LiDAR</span><span>Satellite</span><span>OSM</span><span>DETR</span><span>DINOv3</span>
-                </div>
-                <div className="capability-proof"><strong>0.890</strong><span>geometry F1 at 2 m</span></div>
-              </article>
-
-              <article>
-                <div className="capability-stage"><span>02</span><small>Generate the hard cases</small></div>
-                <h3>Simulation &amp;<br />scenario engineering</h3>
-                <p>Build synchronized mixed-traffic worlds and convert road or language intent into repeatable safety-critical tests.</p>
-                <div className="capability-tools" aria-label="Simulation and scenario tools">
-                  <span>CARLA</span><span>SUMO</span><span>PhysX</span><span>OpenDRIVE</span><span>LLM + RAG</span>
-                </div>
-                <div className="capability-proof"><strong>3 engines</strong><span>synchronized in one platform</span></div>
-              </article>
-
-              <article>
-                <div className="capability-stage"><span>03</span><small>Design the behavior</small></div>
-                <h3>AV control &amp;<br />decision-making</h3>
-                <p>Design car-following and lane-change control across continuous and discrete actions, with safety constraints in view.</p>
-                <div className="capability-tools" aria-label="Autonomous vehicle control methods">
-                  <span>P-DQN</span><span>ACC</span><span>Lyapunov</span><span>VLM</span><span>VLA</span>
-                </div>
-                <div className="capability-proof"><strong>Hybrid action</strong><span>longitudinal + lateral control</span></div>
-              </article>
-
-              <article>
-                <div className="capability-stage"><span>04</span><small>Measure the risk</small></div>
-                <h3>Safety analysis &amp;<br />validation</h3>
-                <p>Stress-test AVs in high-risk interactions using physics-aware, multidimensional, and stochastic safety methods.</p>
-                <div className="capability-tools" aria-label="Autonomous vehicle safety methods">
-                  <span>TTC / SSM</span><span>ISO 26262</span><span>IEEE 2846</span><span>Bayesian</span>
-                </div>
-                <div className="capability-proof"><strong>59% lower</strong><span>TTC mean absolute error</span></div>
-              </article>
-            </div>
-
-            <div className="transportation-layer">
-              <strong>My differentiator: transportation engineering connects every layer.</strong>
-              <span>Road geometry · traffic flow · infrastructure · human drivers · vehicle dynamics · safety constraints</span>
-            </div>
           </figure>
-
-          <div className="profile-summary">
-            <div><strong>Build</strong><span>End-to-end research systems, not isolated models.</span></div>
-            <div><strong>Test</strong><span>Rare and safety-critical cases before public-road exposure.</span></div>
-            <div><strong>Translate</strong><span>Connect algorithms to traffic operations and real-world risk.</span></div>
-            <a href="#research">Explore selected research <Arrow /></a>
-          </div>
         </section>
 
         <section className="research-section" id="research">
