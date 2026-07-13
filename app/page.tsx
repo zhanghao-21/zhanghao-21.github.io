@@ -159,6 +159,7 @@ export default function Home() {
                 <div><b>Validation</b><span>Behavior · dynamics · safety</span></div>
               </div>
               <div className="project-links">
+                <a href="/projects/virtual-roads-smarter-safety/">Project page <Arrow /></a>
                 <a href="https://arxiv.org/abs/2504.17968" target="_blank" rel="noreferrer">Paper <Arrow /></a>
               </div>
             </div>
