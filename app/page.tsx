@@ -255,14 +255,25 @@ export default function Home() {
             <div className="project-number">03</div>
             <div className="project-content">
               <div className="project-meta"><span>Generative AI · V2X · Scenario engineering</span><span>Co-author</span></div>
-              <h3>V2XSynth</h3>
-              <p className="project-summary">
-                An LLM-orchestrated, retrieval-augmented framework that converts natural-language traffic intent into
-                communication-aware CARLA scenarios with executable behavior and V2X fault models.
-              </p>
-              <div className="industry-value">
-                <strong>Why it matters for AV development</strong>
-                <p>It reduces the effort required to author diverse simulation scenarios and links communication failures—latency, loss, and jitter—to driving safety outcomes.</p>
+              <div className="featured-project-top">
+                <div className="featured-project-copy">
+                  <h3>V2XSynth</h3>
+                  <p className="project-summary">
+                    An LLM-orchestrated, retrieval-augmented framework that converts natural-language traffic intent into
+                    communication-aware CARLA scenarios with executable behavior and V2X fault models.
+                  </p>
+                  <div className="industry-value">
+                    <strong>Why it matters for AV development</strong>
+                    <p>It reduces the effort required to author diverse simulation scenarios and links communication failures—latency, loss, and jitter—to driving safety outcomes.</p>
+                  </div>
+                </div>
+                <figure className="research-overview-figure">
+                  <img
+                    src="/v2xsynth-overview.jpg"
+                    alt="Isometric research overview showing natural-language traffic intent, an LLM and retrieval orchestration core, reusable scenario modules, and a connected-vehicle simulation with V2X communication faults."
+                  />
+                  <figcaption>Traffic intent · LLM + RAG orchestration · V2X scenario execution</figcaption>
+                </figure>
               </div>
               <div className="scenario-flow" aria-label="V2XSynth workflow">
                 <div><span>Prompt</span><p>Describe the traffic, agents, environment, and communication conditions.</p></div>
