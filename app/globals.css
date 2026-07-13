@@ -231,6 +231,29 @@ footer { display: flex; justify-content: space-between; padding: 24px max(24px, 
 .step-copy p { margin: 0 0 18px; color: var(--muted); font-size: 11px; line-height: 1.6; }
 .step-copy small { display: block; padding-top: 12px; border-top: 1px solid var(--line); color: var(--blue); font-size: 9px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
 
+.scenario-intro { display: grid; grid-template-columns: 1fr .72fr; gap: 72px; align-items: start; margin-left: 98px; }
+.scenario-standard { padding: 25px; border: 1px solid var(--line); background: var(--light); }
+.scenario-standard span { display: block; margin-bottom: 8px; color: var(--blue); font-size: 9px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.scenario-standard strong { display: block; font-family: var(--serif); font-size: 24px; font-weight: 500; }
+.scenario-standard p { margin: 15px 0 0; color: var(--muted); font-size: 11px; line-height: 1.65; }
+.scenario-method { display: grid; grid-template-columns: repeat(3, 1fr); margin: 36px 0 0 98px; border: 1px solid var(--line); }
+.scenario-method > div { padding: 21px; }
+.scenario-method > div + div { border-left: 1px solid var(--line); }
+.scenario-method span { color: var(--accent); font-family: var(--serif); font-size: 15px; }
+.scenario-method strong { display: block; margin: 20px 0 8px; font-family: var(--serif); font-size: 18px; font-weight: 500; }
+.scenario-method p { margin: 0; color: var(--muted); font-size: 10px; line-height: 1.55; }
+.scenario-video-list { margin: 36px 0 0 98px; border-top: 1px solid var(--line); }
+.scenario-video-list article { display: grid; grid-template-columns: 1.25fr .75fr; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); border-left: 1px solid var(--line); }
+.scenario-video-list figure { margin: 0; border-right: 1px solid var(--line); background: #111; }
+.scenario-video-list video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #111; }
+.scenario-copy { align-self: center; padding: 28px; }
+.scenario-copy > span { color: var(--blue); font-size: 9px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }
+.scenario-copy h3 { margin: 14px 0 13px; font-family: var(--serif); font-size: 27px; font-weight: 500; letter-spacing: -.02em; line-height: 1.18; }
+.scenario-copy p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.65; }
+.scenario-copy small { display: block; margin-top: 20px; padding-top: 13px; border-top: 1px solid var(--line); color: var(--muted); font-size: 9px; line-height: 1.5; }
+.scenario-copy small b { color: var(--accent); font-weight: 700; letter-spacing: .05em; text-transform: uppercase; }
+.scenario-note { margin: 16px 0 0 98px; color: var(--muted); font-size: 11px; line-height: 1.6; }
+
 .experiment-intro { display: grid; grid-template-columns: 1fr .5fr; gap: 72px; align-items: end; margin: 0 0 38px 98px; }
 .experiment-intro > p:last-child { margin: 0; color: var(--muted); font-size: 12px; }
 .video-comparison { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-left: 98px; }
@@ -280,7 +303,7 @@ footer { display: flex; justify-content: space-between; padding: 24px max(24px, 
   .project-hero { gap: 38px; min-height: 0; }
   .project-hero-copy h1 { font-size: 58px; }
   .case-heading { grid-template-columns: 54px 1fr; gap: 20px; }
-  .problem-grid, .wide-figure, .system-layers, .reconstruction-copy, .construction-media, .construction-figure, .experiment-intro, .video-comparison, .result-feature, .metric-table, .result-note, .contribution-grid { margin-left: 74px; }
+  .problem-grid, .wide-figure, .system-layers, .reconstruction-copy, .construction-media, .construction-figure, .scenario-intro, .scenario-method, .scenario-video-list, .scenario-note, .experiment-intro, .video-comparison, .result-feature, .metric-table, .result-note, .contribution-grid { margin-left: 74px; }
   .problem-grid, .reconstruction-copy { gap: 42px; }
   .construction-media { grid-template-columns: 1fr; }
   .construction-context { border-left: 1px solid var(--line); border-top: 0; }
@@ -307,15 +330,19 @@ footer { display: flex; justify-content: space-between; padding: 24px max(24px, 
   .case-heading { grid-template-columns: 1fr; gap: 8px; margin-bottom: 34px; }
   .case-heading h2 { font-size: 38px; }
   .case-number { font-size: 18px; }
-  .problem-grid, .wide-figure, .system-layers, .reconstruction-copy, .construction-media, .construction-figure, .experiment-intro, .video-comparison, .result-feature, .metric-table, .result-note, .contribution-grid { margin-left: 0; }
-  .problem-grid, .reconstruction-copy, .experiment-intro { grid-template-columns: 1fr; gap: 30px; }
-  .system-layers, .construction-steps, .video-comparison, .contribution-grid { grid-template-columns: 1fr; }
+  .problem-grid, .wide-figure, .system-layers, .reconstruction-copy, .construction-media, .construction-figure, .scenario-intro, .scenario-method, .scenario-video-list, .scenario-note, .experiment-intro, .video-comparison, .result-feature, .metric-table, .result-note, .contribution-grid { margin-left: 0; }
+  .problem-grid, .reconstruction-copy, .scenario-intro, .experiment-intro { grid-template-columns: 1fr; gap: 30px; }
+  .system-layers, .construction-steps, .scenario-method, .video-comparison, .contribution-grid { grid-template-columns: 1fr; }
   .system-layers article + article { border-left: 0; border-top: 1px solid var(--line); }
   .construction-context { padding: 28px 22px; }
   .construction-figure > figcaption { align-items: flex-start; flex-direction: column; }
   .construction-steps article + article, .construction-steps article:nth-child(4) { border-left: 0; border-top: 1px solid var(--line); }
   .step-image img { aspect-ratio: 16 / 10; }
   .step-copy { min-height: 0; }
+  .scenario-method > div + div { border-left: 0; border-top: 1px solid var(--line); }
+  .scenario-video-list article { grid-template-columns: 1fr; }
+  .scenario-video-list figure { border-right: 0; border-bottom: 1px solid var(--line); }
+  .scenario-copy { padding: 24px 20px; }
   .video-comparison figcaption { align-items: flex-start; flex-direction: column; gap: 4px; }
   .metric-table { overflow-x: auto; }
   .metric-table-row { min-width: 590px; }
