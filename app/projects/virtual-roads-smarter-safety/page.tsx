@@ -20,7 +20,7 @@ export default function VirtualRoadsProject() {
         <Link className="site-name" href="/">Hao Zhang</Link>
         <nav aria-label="Project navigation">
           <a href="#system">System</a>
-          <a href="#experiments">Experiments</a>
+          <a href="#scenarios">Scenarios</a>
           <a href="#results">Results</a>
           <Link href="/#research">All research</Link>
         </nav>
@@ -218,9 +218,82 @@ export default function VirtualRoadsProject() {
           </figure>
         </section>
 
-        <section className="case-section" id="experiments">
+        <section className="case-section scenario-section" id="scenarios">
           <div className="case-heading">
             <p className="case-number">04</p>
+            <div>
+              <p className="section-label">High-risk scenario testing</p>
+              <h2>Risk is designed into the road, then tested under live traffic.</h2>
+            </div>
+          </div>
+
+          <div className="scenario-intro">
+            <p className="case-lead">
+              ASAM OpenDRIVE gives the platform a parametric description of roads, lanes, markings, objects, and signals. That lets us create repeatable safety-critical tests by changing the infrastructure geometry itself—not just the actors moving through it.
+            </p>
+            <div className="scenario-standard">
+              <span>Scenario-generation method</span>
+              <strong>Select · Perturb · Assemble</strong>
+              <p>Start from a reusable road template, modify the safety-critical geometric parameter, and deploy the resulting network into the digital twin.</p>
+            </div>
+          </div>
+
+          <div className="scenario-method" aria-label="Select perturb assemble scenario workflow">
+            <div><span>01</span><strong>Select a template</strong><p>Choose an OpenDRIVE lane drop, on-ramp, or weaving interface.</p></div>
+            <div><span>02</span><strong>Perturb geometry</strong><p>Shorten the taper, acceleration lane, or distance between entry and exit.</p></div>
+            <div><span>03</span><strong>Assemble &amp; run</strong><p>Generate the network, add traffic, and observe vehicle behavior and safety telemetry.</p></div>
+          </div>
+
+          <div className="scenario-video-list">
+            <article>
+              <figure>
+                <video controls muted loop playsInline preload="metadata" poster={`${assetRoot}/scenario-lane-drop.png`} aria-label="High-risk lane-drop scenario with an insufficient taper">
+                  <source src={`${assetRoot}/scenario-lane-drop.mp4`} type="video/mp4" />
+                </video>
+              </figure>
+              <div className="scenario-copy">
+                <span>Scenario A · Merge geometry</span>
+                <h3>Lane drop with insufficient taper</h3>
+                <p>A standard 2-to-1 lane-merge template is modified by suppressing the taper length below the safe transition threshold for the design speed.</p>
+                <small><b>Parameter</b> L<sub>taper</sub> · abrupt lateral compression</small>
+              </div>
+            </article>
+
+            <article>
+              <figure>
+                <video controls muted loop playsInline preload="metadata" poster={`${assetRoot}/scenario-short-onramp.png`} aria-label="High-risk on-ramp scenario with an insufficient acceleration lane">
+                  <source src={`${assetRoot}/scenario-short-onramp.mp4`} type="video/mp4" />
+                </video>
+              </figure>
+              <div className="scenario-copy">
+                <span>Scenario B · Speed mismatch</span>
+                <h3>Short on-ramp acceleration</h3>
+                <p>The acceleration lane is constrained so an entering vehicle cannot reasonably accelerate from roughly 40 mph to the 60+ mph mainline speed before merging.</p>
+                <small><b>Parameter</b> L<sub>accel</sub> · closing-speed conflict</small>
+              </div>
+            </article>
+
+            <article>
+              <figure>
+                <video controls muted loop playsInline preload="metadata" poster={`${assetRoot}/scenario-heavy-weaving.png`} aria-label="High-risk weaving scenario with closely spaced entry and exit ramps">
+                  <source src={`${assetRoot}/scenario-heavy-weaving.mp4`} type="video/mp4" />
+                </video>
+              </figure>
+              <div className="scenario-copy">
+                <span>Scenario C · Interaction density</span>
+                <h3>Heavy weaving section</h3>
+                <p>An on-ramp is placed immediately before an off-ramp, compressing the distance available for entering and exiting vehicles to cross paths.</p>
+                <small><b>Parameter</b> L<sub>weave</sub> · concentrated lane-change conflicts</small>
+              </div>
+            </article>
+          </div>
+
+          <p className="scenario-note">These are geometry-controlled tests: each hazard can be reproduced, varied, and compared while the platform records the same simulation and safety channels.</p>
+        </section>
+
+        <section className="case-section" id="experiments">
+          <div className="case-heading">
+            <p className="case-number">05</p>
             <div>
               <p className="section-label">Physics experiment</p>
               <h2>The same control input can produce a different safety outcome.</h2>
@@ -252,7 +325,7 @@ export default function VirtualRoadsProject() {
 
         <section className="case-section results-section" id="results">
           <div className="case-heading">
-            <p className="case-number">05</p>
+            <p className="case-number">06</p>
             <div>
               <p className="section-label">Safety evaluation</p>
               <h2>Simulation becomes engineering evidence when the metric tracks the physics.</h2>
@@ -302,7 +375,7 @@ export default function VirtualRoadsProject() {
 
         <section className="case-section contribution-section">
           <div className="case-heading">
-            <p className="case-number">06</p>
+            <p className="case-number">07</p>
             <div>
               <p className="section-label">My contribution</p>
               <h2>I worked across the stack—from infrastructure data to AV safety analysis.</h2>
