@@ -1,0 +1,10 @@
+node_modules/
+.pnpm-store/
+dist/
+.next/
+.wrangler/
+tmp/
+*.log
+.devserver.*
+DETR_MAP.pdf
+Hao_Zhang_Resume__Copy_.pdf
