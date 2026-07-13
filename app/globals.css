@@ -46,37 +46,37 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--accent); outli
 .technical-profile-shell { width: min(1440px, calc(100vw - 48px)); margin-left: 50%; transform: translateX(-50%); }
 .technical-profile-heading { display: grid; grid-template-columns: 1.1fr .9fr; gap: 70px; align-items: end; margin-bottom: 38px; }
 .technical-profile-heading .section-label { margin-bottom: 10px; }
-.technical-profile-kicker { margin: 0 0 9px; color: var(--blue); font-size: 10px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
+.technical-profile-kicker { margin: 0 0 9px; color: var(--blue); font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
 .technical-profile-heading h2 { margin: 0; font-family: var(--serif); font-size: clamp(42px, 4.5vw, 68px); font-weight: 500; letter-spacing: -.035em; line-height: .98; }
-.technical-profile-path { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: flex-end; margin: 0 0 3px; color: var(--muted); font-size: 11px; line-height: 1.5; }
+.technical-profile-path { display: flex; flex-wrap: wrap; gap: 9px; align-items: center; justify-content: flex-end; margin: 0 0 3px; color: var(--muted); font-size: 13px; line-height: 1.5; }
 .technical-profile-path span { white-space: nowrap; }
-.technical-profile-path i { color: var(--accent); font-family: var(--serif); font-size: 14px; font-style: normal; }
+.technical-profile-path i { color: var(--accent); font-family: var(--serif); font-size: 16px; font-style: normal; }
 .technical-profile-system { display: grid; grid-template-areas: "left scene right"; grid-template-columns: 220px minmax(0, 1fr) 220px; gap: 18px; align-items: center; }
 .technical-profile-rail { display: grid; gap: 18px; }
 .technical-profile-rail-left { grid-area: left; }
 .technical-profile-rail-right { grid-area: right; }
-.technical-profile-card { position: relative; min-height: 244px; padding: 21px 20px 19px; border: 1px solid #d6dde1; border-radius: 5px; background: rgba(255,255,255,.98); box-shadow: 0 9px 26px rgba(31,41,51,.07); }
+.technical-profile-card { position: relative; min-height: 268px; padding: 21px 20px 19px; border: 1px solid #d6dde1; border-radius: 5px; background: rgba(255,255,255,.98); box-shadow: 0 9px 26px rgba(31,41,51,.07); }
 .technical-profile-rail-left .technical-profile-card::after, .technical-profile-rail-right .technical-profile-card::before { position: absolute; top: 50%; width: 19px; border-top: 1px dashed var(--accent); content: ""; }
 .technical-profile-rail-left .technical-profile-card::after { right: -20px; }
 .technical-profile-rail-right .technical-profile-card::before { left: -20px; }
 .technical-profile-card-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .technical-profile-card-top > span { display: grid; width: 34px; height: 34px; place-items: center; border-radius: 50%; background: var(--accent); color: #fff; font-family: var(--serif); font-size: 14px; }
-.technical-profile-card-top small { color: var(--blue); font-size: 8px; font-weight: 700; letter-spacing: .09em; text-align: right; text-transform: uppercase; }
+.technical-profile-card-top small { color: var(--blue); font-size: 10px; font-weight: 700; letter-spacing: .08em; text-align: right; text-transform: uppercase; }
 .technical-profile-card h3 { margin: 21px 0 9px; font-family: var(--serif); font-size: 24px; font-weight: 500; letter-spacing: -.02em; line-height: 1.1; }
-.technical-profile-card p { margin: 0; color: var(--muted); font-size: 10px; line-height: 1.55; }
+.technical-profile-card p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.55; }
 .technical-profile-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 15px; }
-.technical-profile-tags span { padding: 4px 6px; border: 1px solid var(--line); border-radius: 2px; color: var(--ink); font-size: 7px; font-weight: 700; letter-spacing: .04em; }
+.technical-profile-tags span { padding: 5px 7px; border: 1px solid var(--line); border-radius: 2px; color: var(--ink); font-size: 10px; font-weight: 700; letter-spacing: .03em; }
 .technical-profile-scene { position: relative; grid-area: scene; overflow: hidden; margin: 0; border: 1px solid #d6dde1; border-radius: 7px; background: var(--light); box-shadow: 0 16px 40px rgba(31,41,51,.10); }
 .technical-profile-scene::after { position: absolute; inset: 0; border: 1px solid rgba(255,255,255,.6); border-radius: inherit; content: ""; pointer-events: none; }
-.technical-profile-scene img { display: block; width: 100%; height: 506px; object-fit: cover; object-position: center; }
+.technical-profile-scene img { display: block; width: 100%; height: 554px; object-fit: cover; object-position: center; }
 .technical-profile-scene-labels { position: absolute; left: 18px; right: 18px; bottom: 16px; display: flex; flex-wrap: wrap; gap: 7px; }
-.technical-profile-scene-labels span { padding: 7px 9px; border: 1px solid rgba(255,255,255,.78); border-radius: 3px; background: rgba(31,41,51,.78); color: #fff; font-size: 7px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; backdrop-filter: blur(6px); }
+.technical-profile-scene-labels span { padding: 8px 10px; border: 1px solid rgba(255,255,255,.78); border-radius: 3px; background: rgba(31,41,51,.78); color: #fff; font-size: 10px; font-weight: 700; letter-spacing: .065em; text-transform: uppercase; backdrop-filter: blur(6px); }
 .technical-profile-foundation { display: grid; grid-template-columns: repeat(5, 1fr); margin-top: 18px; border: 1px solid #d6dde1; border-radius: 5px; background: #fff; }
-.technical-profile-foundation > div { min-height: 80px; padding: 17px 18px; }
+.technical-profile-foundation > div { min-height: 92px; padding: 18px; }
 .technical-profile-foundation > div + div { border-left: 1px solid var(--line); }
 .technical-profile-foundation strong, .technical-profile-foundation span { display: block; }
-.technical-profile-foundation strong { margin-bottom: 6px; color: var(--blue); font-size: 8px; letter-spacing: .08em; text-transform: uppercase; }
-.technical-profile-foundation span { color: var(--muted); font-size: 8px; line-height: 1.45; }
+.technical-profile-foundation strong { margin-bottom: 7px; color: var(--blue); font-size: 10px; letter-spacing: .075em; text-transform: uppercase; }
+.technical-profile-foundation span { color: var(--muted); font-size: 11px; line-height: 1.5; }
 
 .project-entry { display: grid; grid-template-columns: 70px 1fr; gap: 26px; padding: 54px 0; border-top: 1px solid var(--line); }
 .project-entry:last-child { border-bottom: 1px solid var(--line); }
@@ -180,14 +180,14 @@ footer { display: flex; justify-content: space-between; padding: 24px max(24px, 
   .technical-profile-shell { width: calc(100vw - 20px); }
   .technical-profile-heading { margin-bottom: 28px; }
   .technical-profile-heading h2 { font-size: 40px; line-height: 1.02; }
-  .technical-profile-path { gap: 5px 7px; font-size: 9px; }
+  .technical-profile-path { gap: 6px 8px; font-size: 11px; }
   .technical-profile-rail { grid-template-columns: 1fr; }
   .technical-profile-card { padding: 20px; }
   .technical-profile-card h3 { font-size: 26px; }
-  .technical-profile-card p { font-size: 11px; }
+  .technical-profile-card p { font-size: 12px; }
   .technical-profile-scene img { height: 280px; object-fit: cover; }
   .technical-profile-scene-labels { left: 10px; right: 10px; bottom: 9px; gap: 4px; }
-  .technical-profile-scene-labels span { padding: 5px 6px; font-size: 6px; }
+  .technical-profile-scene-labels span { padding: 6px 7px; font-size: 9px; }
   .technical-profile-foundation { grid-template-columns: 1fr; }
   .technical-profile-foundation > div, .technical-profile-foundation > div:nth-child(4), .technical-profile-foundation > div:nth-child(5) { min-height: 0; padding: 15px 17px; border-left: 0; }
   .technical-profile-foundation > div + div { border-top: 1px solid var(--line); }
