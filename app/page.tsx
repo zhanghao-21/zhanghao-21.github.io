@@ -3,410 +3,288 @@ const Arrow = () => <span aria-hidden="true">↗</span>;
 const publications = [
   {
     year: "2026",
-    title:
-      "Integrated Automated Car Following and Lane-changing Control Based on a Parameterized Deep Q-Network with Hybrid Action Space",
+    title: "Integrated Automated Car Following and Lane-changing Control Based on a Parameterized Deep Q-Network with Hybrid Action Space",
     venue: "arXiv preprint",
-    role: "First author",
+    authors: "H. Zhang, Z. Li, and Y. Zhou",
     href: "https://arxiv.org/abs/2607.06771",
   },
   {
-    year: "2025",
-    title:
-      "Why Anticipatory Sensing Matters in Commercial ACC Systems Under Cut-in Scenarios",
-    venue: "Accident Analysis & Prevention",
-    role: "First author",
+    year: "2026",
+    title: "Virtual Roads, Smarter Safety: A Digital Twin Framework for Mixed Autonomous Traffic Safety Analysis",
+    venue: "IEEE Internet of Things Journal",
+    authors: "H. Zhang, X. Yue, K. Tian, S. Li, K. Wu, Z. Li, D. Lord, and Y. Zhou",
+    href: "https://arxiv.org/abs/2504.17968",
   },
   {
     year: "2025",
-    title:
-      "On the Collision Risk of Stochastic Traffic: Analytical Approximation in 2D and 3D Spaces for Generic Vehicles",
+    title: "Why Anticipatory Sensing Matters in Commercial ACC Systems Under Cut-in Scenarios",
+    venue: "Accident Analysis & Prevention",
+    authors: "H. Zhang, S. Li, Z. Li, M. Anis, D. Lord, and Y. Zhou",
+  },
+  {
+    year: "2025",
+    title: "On the Collision Risk of Stochastic Traffic: Analytical Approximation in 2D and 3D Spaces for Generic Vehicles",
     venue: "Presented at TRB 2026",
-    role: "First author",
+    authors: "H. Zhang, K. Wu, Z. Li, Z. Tu, D. Lord, and Y. Zhou",
+  },
+  {
+    year: "2025",
+    title: "V2XSynth: An LLM-Orchestrated and Retrieval-Augmented V2X Scenario Generator",
+    venue: "Presented at TRB 2026",
+    authors: "K. Wu, H. Zhang, P. Li, R. Gan, J. You, Z. Tu, and Y. Zhou",
+    href: "https://keshuw95.github.io/V2XSynth/",
   },
   {
     year: "2022",
-    title:
-      "A Temporal Fusion Transformer for Short-term Freeway Traffic Speed Multistep Prediction",
+    title: "A Temporal Fusion Transformer for Short-term Freeway Traffic Speed Multistep Prediction",
     venue: "Neurocomputing",
-    role: "First author",
+    authors: "H. Zhang, Y. Zou, X. Yang, and H. Yang",
   },
 ];
 
 export default function Home() {
   return (
     <main>
-      <a className="skip-link" href="#content">
-        Skip to content
-      </a>
+      <a className="skip-link" href="#about">Skip to content</a>
 
       <header className="site-header">
-        <a className="wordmark" href="#top" aria-label="Hao Zhang, home">
-          HZ<span>.</span>
-        </a>
+        <a className="site-name" href="#about">Hao Zhang</a>
         <nav aria-label="Main navigation">
+          <a href="#about">About</a>
           <a href="#research">Research</a>
           <a href="#publications">Publications</a>
-          <a href="#about">About</a>
+          <a href="#background">Background</a>
         </nav>
-        <a className="header-contact" href="mailto:haozhangch9811@gmail.com">
-          Let&apos;s talk <Arrow />
-        </a>
       </header>
 
-      <div id="content">
-        <section className="hero" id="top">
-          <div className="hero-copy">
-            <p className="eyebrow">Transportation × AI × Safety</p>
-            <h1>
-              Building intelligence
-              <br />
-              for <em>safer roads.</em>
-            </h1>
-            <p className="hero-intro">
-              I&apos;m Hao Zhang, a Ph.D. researcher at Texas A&amp;M. I build
-              digital twins, learning systems, and simulation tools that help
-              autonomous mobility understand the road—and its risks.
-            </p>
-            <div className="hero-actions">
-              <a className="button button-primary" href="#research">
-                Explore my research <span aria-hidden="true">↓</span>
-              </a>
-              <a
-                className="button button-quiet"
-                href="/Hao-Zhang-Resume.pdf"
-                target="_blank"
-              >
-                View résumé <Arrow />
-              </a>
+      <div className="page-shell">
+        <section className="about-section" id="about">
+          <div className="portrait-column">
+            <img className="portrait" src="/bio_figure.jpg" alt="Portrait of Hao Zhang" />
+            <div className="profile-links" aria-label="Profile links">
+              <a href="mailto:haozhangch9811@gmail.com">Email</a>
+              <a href="https://scholar.google.com/citations?user=Y2bfQ1kAAAAJ" target="_blank" rel="noreferrer">Scholar</a>
+              <a href="https://github.com/zhanghao-21" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://www.linkedin.com/in/hao-zhang-8a8b482b4/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="/Hao-Zhang-Resume.pdf" target="_blank">Résumé</a>
             </div>
           </div>
 
-          <div className="hero-visual" aria-label="A research map connecting sensing, simulation, and safety">
-            <div className="hero-grid" aria-hidden="true" />
-            <div className="orbit orbit-one" aria-hidden="true" />
-            <div className="orbit orbit-two" aria-hidden="true" />
-            <div className="visual-node node-a">
-              <span>01</span>
-              <strong>Sense</strong>
-              <small>LiDAR · Satellite · V2X</small>
-            </div>
-            <div className="visual-node node-b">
-              <span>02</span>
-              <strong>Simulate</strong>
-              <small>Digital twins · CARLA</small>
-            </div>
-            <div className="visual-node node-c">
-              <span>03</span>
-              <strong>Make safer</strong>
-              <small>Analyze · Learn · Act</small>
-            </div>
-            <div className="visual-center" aria-hidden="true">
-              <span>HZ</span>
-            </div>
-            <div className="signal-line" aria-hidden="true" />
-          </div>
-
-          <div className="hero-meta">
-            <p>
-              <span>Currently</span>
-              Ph.D. Researcher · Civil &amp; Environmental Engineering
+          <div className="about-copy">
+            <p className="section-label">About</p>
+            <h1>Hao Zhang</h1>
+            <p className="role">Ph.D. Researcher in Autonomous Driving Systems &amp; Transportation Safety</p>
+            <p className="lead">
+              I build learning, simulation, and mapping systems for safer and more capable autonomous vehicles.
             </p>
             <p>
-              <span>Based in</span>
-              College Station, Texas
+              I am a Ph.D. researcher in Civil and Environmental Engineering at Texas A&amp;M University. My work spans
+              autonomous-driving simulation, digital twins, HD map learning, vehicle control, V2X scenario generation,
+              and safety analysis.
             </p>
             <p>
-              <span>Open to</span>
-              Research collaboration &amp; industry roles
+              My goal is to work on autonomous driving systems that perform well not only in benchmarks, but also in the
+              complexity of real traffic. My transportation-engineering background gives me a system-level perspective on
+              how vehicles interact with roads, infrastructure, human drivers, and safety constraints.
             </p>
+            <div className="availability">
+              <span>Career direction</span>
+              Seeking research and engineering opportunities in the autonomous driving industry.
+            </div>
           </div>
         </section>
 
-        <section className="section research-section" id="research">
-          <div className="section-heading">
+        <section className="profile-section" aria-labelledby="profile-title">
+          <div className="section-intro">
+            <p className="section-label">Technical profile</p>
+            <h2 id="profile-title">An AV systems researcher with transportation depth.</h2>
+          </div>
+          <div className="strength-grid">
+            <article>
+              <span>01</span>
+              <h3>Build across the stack</h3>
+              <p>From geospatial data and HD maps to simulation, control, vehicle dynamics, and safety metrics.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Test the hard cases</h3>
+              <p>Construct realistic digital environments and generate critical scenarios before they reach public roads.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Connect models to traffic</h3>
+              <p>Evaluate autonomous systems in mixed traffic with infrastructure, human behavior, and real safety risk in view.</p>
+            </article>
+          </div>
+          <div className="skill-list" aria-label="Research areas">
+            <span>AV simulation</span>
+            <span>Digital twins</span>
+            <span>HD map learning</span>
+            <span>Safety validation</span>
+            <span>Vehicle control</span>
+            <span>V2X &amp; generative AI</span>
+          </div>
+        </section>
+
+        <section className="research-section" id="research">
+          <div className="section-intro split">
             <div>
-              <p className="eyebrow">Selected research</p>
-              <h2>From the physical road to machine reasoning.</h2>
+              <p className="section-label">Selected research</p>
+              <h2>Research for real-world autonomy.</h2>
             </div>
             <p>
-              My work connects geospatial intelligence, simulation, vehicle
-              dynamics, and generative AI to make mobility systems safer and
-              more scalable.
+              I focus on three practical bottlenecks for autonomous driving: building scalable world models, creating useful
+              simulation scenarios, and evaluating safety under realistic traffic interactions.
             </p>
           </div>
 
-          <article className="project project-featured">
-            <div className="project-index">
-              <span>01</span>
-              <p>Digital twin safety</p>
-            </div>
-            <div className="project-main">
-              <div className="project-kicker">
-                <span className="status-dot" /> Published · IEEE Internet of
-                Things Journal
-              </div>
+          <article className="project-entry">
+            <div className="project-number">01</div>
+            <div className="project-content">
+              <div className="project-meta"><span>Digital twin · Simulation · Safety validation</span><span>First author</span></div>
               <h3>Virtual Roads, Smarter Safety</h3>
-              <p className="project-lead">
-                A high-fidelity digital twin framework for studying active
-                safety in mixed autonomous traffic—before risky situations
-                happen on real roads.
+              <p className="project-summary">
+                A digital-twin framework for reproducing mixed autonomous traffic and measuring safety with synchronized
+                traffic flow, vehicle physics, and perception-level simulation.
               </p>
+              <div className="industry-value">
+                <strong>Why it matters for AV development</strong>
+                <p>It provides a scenario-to-metric workflow for testing vehicle behavior under realistic geometry, traffic demand, and physical conditions.</p>
+              </div>
+              <div className="simple-pipeline" aria-label="Digital twin research workflow">
+                <div><b>Environment</b><span>LiDAR · OSM · vehicle data</span></div>
+                <i aria-hidden="true">→</i>
+                <div><b>Co-simulation</b><span>CARLA · SUMO · PhysX</span></div>
+                <i aria-hidden="true">→</i>
+                <div><b>Validation</b><span>Behavior · dynamics · safety</span></div>
+              </div>
               <div className="project-links">
-                <a
-                  href="https://arxiv.org/abs/2504.17968"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Read the paper <Arrow />
-                </a>
-                <span>First author · 2025</span>
+                <a href="https://arxiv.org/abs/2504.17968" target="_blank" rel="noreferrer">Paper <Arrow /></a>
               </div>
-            </div>
-
-            <div className="pipeline" aria-label="Digital twin research workflow">
-              <div className="pipeline-step">
-                <span className="step-number">01</span>
-                <div className="mini-map" aria-hidden="true">
-                  <i />
-                  <i />
-                  <i />
-                </div>
-                <h4>Construct</h4>
-                <p>Drone LiDAR, OpenStreetMap, and vehicle sensors become a lane-accurate 3D world.</p>
-              </div>
-              <div className="pipeline-arrow" aria-hidden="true">→</div>
-              <div className="pipeline-step">
-                <span className="step-number">02</span>
-                <div className="sim-stack" aria-hidden="true">
-                  <b>CARLA</b><b>SUMO</b><b>PhysX</b>
-                </div>
-                <h4>Co-simulate</h4>
-                <p>Traffic flow, perception, and vehicle physics run together in one synchronized platform.</p>
-              </div>
-              <div className="pipeline-arrow" aria-hidden="true">→</div>
-              <div className="pipeline-step">
-                <span className="step-number">03</span>
-                <div className="safety-chart" aria-hidden="true">
-                  <i /><i /><i /><i /><b />
-                </div>
-                <h4>Analyze</h4>
-                <p>Real-time safety indicators reveal how vehicle behavior changes under critical conditions.</p>
-              </div>
-            </div>
-
-            <div className="project-proof">
-              <div><strong>3</strong><span>simulation engines synchronized</span></div>
-              <div><strong>18</strong><span>figures in the full study</span></div>
-              <div><strong>3D</strong><span>physics-informed safety analysis</span></div>
             </div>
           </article>
 
-          <article className="project project-map">
-            <div className="project-index">
-              <span>02</span>
-              <p>HD map learning</p>
-            </div>
-            <div className="project-main">
-              <div className="project-kicker project-kicker-warm">
-                <span className="status-dot" /> Manuscript in preparation
-              </div>
-              <h3>Learning High-definition Digital Twins from Low-fidelity Global Maps</h3>
-              <p className="project-lead">
-                A multi-modal framework that turns satellite imagery and
-                imperfect OpenStreetMap priors into precise, connected,
-                lane-level vector maps—without a survey vehicle.
+          <article className="project-entry">
+            <div className="project-number">02</div>
+            <div className="project-content">
+              <div className="project-meta"><span>HD mapping · Multi-modal learning · Generalization</span><span>First author · In preparation</span></div>
+              <h3>Learning HD Digital Twins from Global Maps</h3>
+              <p className="project-summary">
+                A multi-modal learning framework that transforms satellite imagery and imperfect OpenStreetMap priors into
+                lane-level vector maps with geometry, semantics, and topology.
               </p>
-              <div className="method-chips" aria-label="Methods used">
-                <span>DINOv3</span><span>DETR</span><span>OSM query expansion</span><span>Graph refinement</span>
+              <div className="industry-value">
+                <strong>Why it matters for AV development</strong>
+                <p>It explores a scalable route for bootstrapping and updating HD map coverage without relying exclusively on repeated survey-vehicle collection.</p>
+              </div>
+              <figure className="project-figure">
+                <img src="/map-generation-results.png" alt="HD map predictions compared with ground truth in Washington DC and Pittsburgh" />
+                <figcaption>Satellite + OSM input, ground truth, and model predictions across two cities.</figcaption>
+              </figure>
+              <div className="metric-row" aria-label="Selected project results">
+                <div><strong>2,341</strong><span>aligned map tiles</span></div>
+                <div><strong>0.890</strong><span>geometry F1 at 2 m</span></div>
+                <div><strong>0.879</strong><span>adjacency F1</span></div>
+                <div><strong>4 cities</strong><span>within- and cross-city tests</span></div>
               </div>
             </div>
-
-            <figure className="result-figure">
-              <img
-                src="/map-generation-results.png"
-                alt="Satellite images, ground-truth lane maps, model predictions, and prediction overlays for Washington DC and Pittsburgh"
-              />
-              <figcaption>
-                <span>Qualitative results</span>
-                The model recovers visible lane markings and virtual topology across distinct urban environments.
-              </figcaption>
-            </figure>
-
-            <div className="evidence-grid">
-              <div>
-                <strong>2,341</strong>
-                <span>aligned map tiles across four U.S. cities</span>
-              </div>
-              <div>
-                <strong>0.890</strong>
-                <span>geometry F1 at 2m in Pittsburgh</span>
-              </div>
-              <div>
-                <strong>0.879</strong>
-                <span>topological adjacency F1</span>
-              </div>
-            </div>
-
-            <details className="project-detail">
-              <summary>See how the story is organized <span aria-hidden="true">+</span></summary>
-              <div className="detail-content">
-                <p><b>1. The gap.</b> Global maps are abundant, but machine-operational lane geometry is expensive and geographically limited.</p>
-                <p><b>2. The method.</b> Satellite features supply visual evidence, OSM guides the queries, and graph refinement restores topology.</p>
-                <p><b>3. The evidence.</b> Within-city, cross-city, and few-shot experiments show where the system generalizes—and where local examples help.</p>
-              </div>
-            </details>
           </article>
 
-          <article className="project project-v2x">
-            <div className="project-index">
-              <span>03</span>
-              <p>Generative simulation</p>
-            </div>
-            <div className="project-main">
-              <div className="project-kicker project-kicker-blue">
-                <span className="status-dot" /> Open project page
-              </div>
+          <article className="project-entry">
+            <div className="project-number">03</div>
+            <div className="project-content">
+              <div className="project-meta"><span>Generative AI · V2X · Scenario engineering</span><span>Co-author</span></div>
               <h3>V2XSynth</h3>
-              <p className="project-lead">
-                An LLM-orchestrated, retrieval-augmented compiler that turns
-                natural-language traffic intent into communication-aware CARLA
-                scenarios—and traces how latency, loss, and jitter become
-                safety outcomes.
+              <p className="project-summary">
+                An LLM-orchestrated, retrieval-augmented framework that converts natural-language traffic intent into
+                communication-aware CARLA scenarios with executable behavior and V2X fault models.
               </p>
+              <div className="industry-value">
+                <strong>Why it matters for AV development</strong>
+                <p>It reduces the effort required to author diverse simulation scenarios and links communication failures—latency, loss, and jitter—to driving safety outcomes.</p>
+              </div>
+              <div className="scenario-flow" aria-label="V2XSynth workflow">
+                <div><span>Prompt</span><p>Describe the traffic, agents, environment, and communication conditions.</p></div>
+                <div><span>LLM + RAG compiler</span><p>Retrieve validated behaviors, maps, and V2X modules.</p></div>
+                <div><span>CARLA execution</span><p>Run the scenario and collect joint mobility and message telemetry.</p></div>
+              </div>
               <div className="project-links">
-                <a
-                  href="https://keshuw95.github.io/V2XSynth/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Visit project page <Arrow />
-                </a>
-                <span>Co-author · 2025</span>
-              </div>
-            </div>
-
-            <div className="v2x-visual" aria-label="V2XSynth converts a prompt into an executable connected-vehicle simulation">
-              <div className="prompt-card">
-                <span>Natural-language intent</span>
-                <p>“Dense, high-conflict traffic at a signalized intersection.”</p>
-              </div>
-              <div className="compiler-card">
-                <span>LLM + RAG</span>
-                <div aria-hidden="true"><i /><i /><i /></div>
-                <p>Interpret · Retrieve · Validate · Assemble</p>
-              </div>
-              <div className="scenario-card">
-                <span>Executable scenario</span>
-                <div className="intersection" aria-hidden="true">
-                  <i className="road-h" /><i className="road-v" />
-                  <b className="car car-one" /><b className="car car-two" /><b className="car car-three" />
-                  <em className="wave wave-one" /><em className="wave wave-two" />
-                </div>
-                <p>CARLA + SPaT / MAP / BSM telemetry</p>
+                <a href="https://keshuw95.github.io/V2XSynth/" target="_blank" rel="noreferrer">Project page <Arrow /></a>
               </div>
             </div>
           </article>
         </section>
 
-        <section className="section publications-section" id="publications">
-          <div className="section-heading compact">
+        <section className="publications-section" id="publications">
+          <div className="section-intro split">
             <div>
-              <p className="eyebrow">Selected publications</p>
-              <h2>Research with a measurable road forward.</h2>
+              <p className="section-label">Publications</p>
+              <h2>Selected work</h2>
             </div>
-            <a
-              className="text-link"
-              href="https://scholar.google.com/citations?user=Y2bfQ1kAAAAJ"
-              target="_blank"
-              rel="noreferrer"
-            >
-              All work on Google Scholar <Arrow />
-            </a>
+            <a className="scholar-link" href="https://scholar.google.com/citations?user=Y2bfQ1kAAAAJ" target="_blank" rel="noreferrer">Full list on Google Scholar <Arrow /></a>
           </div>
-
           <div className="publication-list">
             {publications.map((publication) => {
-              const content = (
+              const body = (
                 <>
-                  <span className="pub-year">{publication.year}</span>
+                  <span className="publication-year">{publication.year}</span>
                   <div>
                     <h3>{publication.title}</h3>
-                    <p>{publication.venue} · {publication.role}</p>
+                    <p>{publication.authors}</p>
+                    <b>{publication.venue}</b>
                   </div>
-                  <span className="pub-arrow" aria-hidden="true">{publication.href ? "↗" : "—"}</span>
+                  <span className="publication-arrow" aria-hidden="true">{publication.href ? "↗" : ""}</span>
                 </>
               );
-
               return publication.href ? (
-                <a key={publication.title} href={publication.href} target="_blank" rel="noreferrer" className="publication-row">
-                  {content}
-                </a>
+                <a className="publication" href={publication.href} target="_blank" rel="noreferrer" key={publication.title}>{body}</a>
               ) : (
-                <div key={publication.title} className="publication-row">
-                  {content}
-                </div>
+                <div className="publication" key={publication.title}>{body}</div>
               );
             })}
           </div>
         </section>
 
-        <section className="section about-section" id="about">
-          <div className="about-copy">
-            <p className="eyebrow">Beyond the papers</p>
-            <h2>I like problems that live between disciplines.</h2>
-            <p>
-              My background spans logistics, transportation engineering, and
-              AI. That mix shapes how I work: start with a real system, model
-              the structure that matters, and build tools people can test—not
-              just ideas they can describe.
-            </p>
-            <p>
-              Away from research, you&apos;ll usually find me playing soccer or
-              supporting Liverpool FC. The same things keep me interested:
-              systems, space, timing, and a good team moving with purpose.
-            </p>
+        <section className="background-section" id="background">
+          <div className="section-intro">
+            <p className="section-label">Background</p>
+            <h2>Education &amp; experience</h2>
           </div>
-
-          <div className="timeline" aria-label="Education and experience timeline">
-            <div className="timeline-item active">
-              <span>2023—2026</span>
+          <div className="background-grid">
+            <div>
               <h3>Texas A&amp;M University</h3>
-              <p>Ph.D. · Research &amp; Teaching Assistant</p>
+              <p>Ph.D. in Civil and Environmental Engineering</p>
+              <span>Research / Teaching Assistant · 2023–Present</span>
             </div>
-            <div className="timeline-item">
-              <span>2020—2023</span>
+            <div>
               <h3>Tongji University</h3>
-              <p>M.S. · Transportation Engineering</p>
+              <p>M.S. in Transportation Engineering</p>
+              <span>Research Assistant · 2020–2023</span>
             </div>
-            <div className="timeline-item">
-              <span>2016—2020</span>
+            <div>
               <h3>Central South University</h3>
-              <p>B.S. · Logistics Engineering</p>
+              <p>B.S. in Logistics Engineering</p>
+              <span>2016–2020</span>
             </div>
           </div>
+          <p className="personal-note">Outside research, I enjoy playing soccer and supporting Liverpool FC.</p>
         </section>
 
-        <section className="contact-section" id="contact">
-          <p className="eyebrow">Start a conversation</p>
-          <h2>Let&apos;s make mobility<br />safer—and smarter.</h2>
-          <p>
-            I&apos;m interested in research collaborations and opportunities at
-            the intersection of AI, simulation, and transportation safety.
-          </p>
-          <a className="contact-email" href="mailto:haozhangch9811@gmail.com">
-            haozhangch9811@gmail.com <Arrow />
-          </a>
-          <div className="contact-links">
-            <a href="https://scholar.google.com/citations?user=Y2bfQ1kAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a>
-            <a href="https://www.linkedin.com/in/hao-zhang-8a8b482b4/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="/Hao-Zhang-Resume.pdf" target="_blank">Résumé</a>
+        <section className="contact-section">
+          <div>
+            <p className="section-label">Contact</p>
+            <h2>Interested in autonomous driving research and engineering.</h2>
+          </div>
+          <div>
+            <p>I welcome conversations about AV simulation, mapping, safety validation, and intelligent mobility systems.</p>
+            <a href="mailto:haozhangch9811@gmail.com">haozhangch9811@gmail.com <Arrow /></a>
           </div>
         </section>
       </div>
 
       <footer>
-        <p>© 2026 Hao Zhang</p>
-        <a href="#top">Back to top ↑</a>
+        <span>© 2026 Hao Zhang</span>
+        <a href="#about">Back to top ↑</a>
       </footer>
     </main>
   );

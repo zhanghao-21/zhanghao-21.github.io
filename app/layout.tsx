@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Hao Zhang — AI, Digital Twins & Transportation Safety",
+  title: "Hao Zhang — Autonomous Driving Systems Research",
   description:
-    "Hao Zhang is a Ph.D. researcher at Texas A&M building digital twins, AI systems, and simulation tools for safer autonomous mobility.",
+    "Hao Zhang is a Ph.D. researcher at Texas A&M working on autonomous-driving simulation, HD mapping, vehicle control, and transportation safety.",
   keywords: [
     "Hao Zhang",
+    "autonomous driving",
     "transportation engineering",
     "digital twins",
     "autonomous vehicles",
