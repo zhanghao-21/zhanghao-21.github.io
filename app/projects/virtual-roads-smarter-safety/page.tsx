@@ -140,16 +140,82 @@ export default function VirtualRoadsProject() {
             </ul>
           </div>
 
-          <div className="reconstruction-gallery">
-            <figure className="large">
-              <img src={`${assetRoot}/lane-network.png`} alt="Color-coded lane network and lane identifiers for the reconstructed roundabout" />
-              <figcaption>Lane-level geometry and topology make the environment operational for AV simulation.</figcaption>
+          <div className="construction-media">
+            <figure className="construction-video">
+              <video
+                controls
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                poster={`${assetRoot}/data-collection.png`}
+                aria-label="Drone survey and three-dimensional capture setup used to collect data for the digital twin"
+              >
+                <source src={`${assetRoot}/digital-twin-construction.mp4`} type="video/mp4" />
+              </video>
+              <figcaption>Field collection: configuring the drone&apos;s automated 3D capture and surveying the real road environment.</figcaption>
             </figure>
-            <figure>
-              <img src={`${assetRoot}/roadway-finetuning.png`} alt="Roadway elevation before and after vehicle-sensor-based fine tuning" />
-              <figcaption>Measured roadway data corrects elevation and boundary errors in the initial map.</figcaption>
-            </figure>
+            <div className="construction-context">
+              <p className="section-label">Watch the real-to-digital step</p>
+              <h3>Capture once. Reuse the environment across AV experiments.</h3>
+              <p>
+                The drone follows a structured scan plan to collect overlapping multi-view imagery. Ground control points anchor the reconstruction to real coordinates so the resulting geometry can be aligned with OSM and exported to the simulation stack.
+              </p>
+            </div>
           </div>
+
+          <figure className="construction-figure">
+            <figcaption>
+              <span>Construction workflow</span>
+              <strong>From field observations to a simulation-ready digital twin</strong>
+            </figcaption>
+            <div className="construction-steps">
+              <article>
+                <div className="step-image">
+                  <img src={`${assetRoot}/data-collection.png`} alt="Drone three-dimensional scan setup interface in the field" />
+                  <span>01</span>
+                </div>
+                <div className="step-copy">
+                  <h3>Collect</h3>
+                  <p>Drone multi-view images establish the scene; ground control points and GPS provide geospatial reference.</p>
+                  <small>Output · raw .dng imagery</small>
+                </div>
+              </article>
+              <article>
+                <div className="step-image">
+                  <img src={`${assetRoot}/point-cloud-reconstruction.png`} alt="Photogrammetric reconstruction of the surveyed roadway environment" />
+                  <span>02</span>
+                </div>
+                <div className="step-copy">
+                  <h3>Reconstruct</h3>
+                  <p>RealityCapture aligns the images and produces a dense, georeferenced 3D point cloud and textured mesh.</p>
+                  <small>Output · .las point cloud</small>
+                </div>
+              </article>
+              <article>
+                <div className="step-image">
+                  <img src={`${assetRoot}/digital-twin-roundabout.png`} alt="RoadRunner digital twin built from OpenStreetMap and reconstructed point-cloud data" />
+                  <span>03</span>
+                </div>
+                <div className="step-copy">
+                  <h3>Structure</h3>
+                  <p>Semantic segmentation and OSM add roads, lanes, topology, buildings, vegetation, and junction logic in RoadRunner.</p>
+                  <small>Output · .rrhd scene</small>
+                </div>
+              </article>
+              <article>
+                <div className="step-image">
+                  <img src={`${assetRoot}/roadway-finetuning.png`} alt="Road geometry before and after sensor-based elevation fine tuning" />
+                  <span>04</span>
+                </div>
+                <div className="step-copy">
+                  <h3>Calibrate &amp; export</h3>
+                  <p>Vehicle sensors refine grade and cross-slope; missing junctions are repaired before synchronized deployment.</p>
+                  <small>Output · OpenDRIVE + CARLA/SUMO assets</small>
+                </div>
+              </article>
+            </div>
+          </figure>
         </section>
 
         <section className="case-section" id="experiments">
