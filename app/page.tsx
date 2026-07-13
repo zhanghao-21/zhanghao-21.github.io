@@ -109,7 +109,7 @@ export default function Home() {
           <div className="hero-meta">
             <p>
               <span>Currently</span>
-              Ph.D. Candidate · Civil &amp; Environmental Engineering
+              Ph.D. Researcher · Civil &amp; Environmental Engineering
             </p>
             <p>
               <span>Based in</span>
