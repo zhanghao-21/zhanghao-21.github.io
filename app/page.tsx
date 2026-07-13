@@ -184,14 +184,25 @@ export default function Home() {
             <div className="project-number">01</div>
             <div className="project-content">
               <div className="project-meta"><span>Digital twin · Simulation · Safety validation</span><span>First author</span></div>
-              <h3>Virtual Roads, Smarter Safety</h3>
-              <p className="project-summary">
-                A digital-twin framework for reproducing mixed autonomous traffic and measuring safety with synchronized
-                traffic flow, vehicle physics, and perception-level simulation.
-              </p>
-              <div className="industry-value">
-                <strong>Why it matters for AV development</strong>
-                <p>It provides a scenario-to-metric workflow for testing vehicle behavior under realistic geometry, traffic demand, and physical conditions.</p>
+              <div className="featured-project-top">
+                <div className="featured-project-copy">
+                  <h3>Virtual Roads, Smarter Safety</h3>
+                  <p className="project-summary">
+                    A digital-twin framework for reproducing mixed autonomous traffic and measuring safety with synchronized
+                    traffic flow, vehicle physics, and perception-level simulation.
+                  </p>
+                  <div className="industry-value">
+                    <strong>Why it matters for AV development</strong>
+                    <p>It provides a scenario-to-metric workflow for testing vehicle behavior under realistic geometry, traffic demand, and physical conditions.</p>
+                  </div>
+                </div>
+                <figure className="research-overview-figure">
+                  <img
+                    src="/virtual-roads-overview.jpg"
+                    alt="Isometric research overview showing a layered digital road map, synchronized mixed-traffic simulation, autonomous-vehicle sensing, and safety validation at an urban intersection."
+                  />
+                  <figcaption>Digital environment · Co-simulation · Safety validation</figcaption>
+                </figure>
               </div>
               <div className="simple-pipeline" aria-label="Digital twin research workflow">
                 <div><b>Environment</b><span>LiDAR · OSM · vehicle data</span></div>
