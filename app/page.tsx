@@ -87,10 +87,6 @@ export default function Home() {
               complexity of real traffic. My transportation-engineering background gives me a system-level perspective on
               how vehicles interact with roads, infrastructure, human drivers, and safety constraints.
             </p>
-            <div className="availability">
-              <span>Career direction</span>
-              Seeking research and engineering opportunities in the autonomous driving industry.
-            </div>
           </div>
         </section>
 
