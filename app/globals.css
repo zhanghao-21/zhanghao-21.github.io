@@ -41,9 +41,6 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--accent); outli
 .role { margin: 18px 0 30px; color: var(--accent); font-size: 15px; font-weight: 700; line-height: 1.45; }
 .about-copy .lead { max-width: 700px; margin: 0 0 24px; color: var(--ink); font-family: var(--serif); font-size: clamp(24px, 2.4vw, 31px); line-height: 1.38; }
 .about-copy > p:not(.section-label):not(.role):not(.lead) { max-width: 720px; margin: 0 0 17px; color: var(--muted); font-family: var(--serif); font-size: 17px; line-height: 1.7; }
-.availability { max-width: 720px; margin-top: 28px; padding: 15px 18px; border-left: 3px solid var(--accent); background: #faf6f6; font-size: 13px; line-height: 1.55; }
-.availability span { display: block; margin-bottom: 3px; color: var(--accent); font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
-
 .profile-section, .research-section, .publications-section, .background-section { padding: 88px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 80px; }
 .technical-profile-section { position: relative; }
 .technical-profile-shell { width: min(1440px, calc(100vw - 48px)); margin-left: 50%; transform: translateX(-50%); }
