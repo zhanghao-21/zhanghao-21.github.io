@@ -95,23 +95,81 @@ export default function Home() {
         </section>
 
         <section className="profile-section technical-profile-section" id="profile" aria-labelledby="profile-title">
-          <h2 className="visually-hidden" id="profile-title">Technical profile: from world models to safe autonomous driving</h2>
-          <figure className="technical-profile-figure">
-            <div className="technical-profile-viewport">
-              <a href="/technical-profile.png" target="_blank" rel="noreferrer" aria-label="Open the technical profile figure at full resolution">
+          <div className="technical-profile-shell">
+            <header className="technical-profile-heading">
+              <div>
+                <p className="section-label">Technical profile</p>
+                <p className="technical-profile-kicker">Hao Zhang · AV systems researcher</p>
+                <h2 id="profile-title">From world models to<br />safe autonomous driving.</h2>
+              </div>
+              <p className="technical-profile-path">
+                <span>Model the world</span><i>→</i><span>Generate hard cases</span><i>→</i><span>Design behavior</span><i>→</i><span>Measure safety</span>
+              </p>
+            </header>
+
+            <div className="technical-profile-system">
+              <div className="technical-profile-rail technical-profile-rail-left">
+                <article className="technical-profile-card">
+                  <div className="technical-profile-card-top"><span>01</span><small>World models</small></div>
+                  <h3>Digital twins &amp;<br />HD mapping</h3>
+                  <p>Reconstruct simulation-ready roads and lane-level vector maps from field and global geospatial data.</p>
+                  <div className="technical-profile-tags" aria-label="Digital twin and mapping methods">
+                    <span>OSM</span><span>LiDAR</span><span>Satellite</span><span>DETR</span><span>DINOv3</span>
+                  </div>
+                </article>
+
+                <article className="technical-profile-card">
+                  <div className="technical-profile-card-top"><span>02</span><small>Hard cases</small></div>
+                  <h3>Scenario<br />engineering</h3>
+                  <p>Build synchronized mixed-traffic worlds and turn road or language intent into repeatable critical tests.</p>
+                  <div className="technical-profile-tags" aria-label="Simulation and scenario tools">
+                    <span>CARLA</span><span>SUMO</span><span>PhysX</span><span>OpenDRIVE</span><span>LLM + RAG</span>
+                  </div>
+                </article>
+              </div>
+
+              <figure className="technical-profile-scene">
                 <img
-                  className="technical-profile-image"
-                  src="/technical-profile.png"
-                  alt="Hao Zhang's autonomous driving research profile, connecting digital twins and HD mapping, scenario engineering, AV control and decision-making, and safety analysis and validation around a transportation digital twin."
+                  src="/technical-profile-city.png"
+                  alt="A transportation digital twin of an urban intersection showing lane topology, sensor coverage, planned paths, predicted trajectories, traffic signals, vehicles, pedestrians, and cyclists."
                 />
-              </a>
+                <div className="technical-profile-scene-labels" aria-hidden="true">
+                  <span>Digital twin</span>
+                  <span>Mixed traffic</span>
+                  <span>Safety-critical interactions</span>
+                </div>
+                <figcaption className="visually-hidden">Transportation-aware autonomy connects road geometry, traffic operations, vehicle behavior, and safety constraints.</figcaption>
+              </figure>
+
+              <div className="technical-profile-rail technical-profile-rail-right">
+                <article className="technical-profile-card">
+                  <div className="technical-profile-card-top"><span>03</span><small>Vehicle behavior</small></div>
+                  <h3>AV control &amp;<br />decision-making</h3>
+                  <p>Design car-following and lane-change control across continuous and discrete actions.</p>
+                  <div className="technical-profile-tags" aria-label="Autonomous vehicle control methods">
+                    <span>P-DQN</span><span>ACC</span><span>LQR / MPC</span><span>VLM</span><span>VLA</span>
+                  </div>
+                </article>
+
+                <article className="technical-profile-card">
+                  <div className="technical-profile-card-top"><span>04</span><small>Risk measurement</small></div>
+                  <h3>Safety analysis &amp;<br />validation</h3>
+                  <p>Stress-test AVs in high-risk interactions with physics-aware, multidimensional, and stochastic methods.</p>
+                  <div className="technical-profile-tags" aria-label="Autonomous vehicle safety methods">
+                    <span>TTC / SSM</span><span>Risk</span><span>ISO 26262</span><span>IEEE 2846</span>
+                  </div>
+                </article>
+              </div>
             </div>
-            <figcaption>
-              <span>Research and engineering capabilities across the autonomous-driving stack.</span>
-              <span className="technical-profile-hint">Swipe to explore on smaller screens.</span>
-              <a href="/technical-profile.png" target="_blank" rel="noreferrer">View full resolution <Arrow /></a>
-            </figcaption>
-          </figure>
+
+            <div className="technical-profile-foundation" aria-label="Transportation-aware autonomy foundation">
+              <div><strong>Data sources</strong><span>AV datasets, OSM, LiDAR, imagery</span></div>
+              <div><strong>Vector maps</strong><span>Lane topology, semantics, infrastructure</span></div>
+              <div><strong>Mixed traffic</strong><span>Vehicles, pedestrians, cyclists, signals</span></div>
+              <div><strong>Behavior &amp; intent</strong><span>Prediction, control, trajectory forecasting</span></div>
+              <div><strong>Risk &amp; safety</strong><span>Metrics, scenario testing, validation</span></div>
+            </div>
+          </div>
         </section>
 
         <section className="research-section" id="research">
