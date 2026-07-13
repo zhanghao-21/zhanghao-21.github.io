@@ -222,19 +222,26 @@ export default function Home() {
             <div className="project-number">02</div>
             <div className="project-content">
               <div className="project-meta"><span>HD mapping · Multi-modal learning · Generalization</span><span>First author · In preparation</span></div>
-              <h3>Learning HD Digital Twins from Global Maps</h3>
-              <p className="project-summary">
-                A multi-modal learning framework that transforms satellite imagery and imperfect OpenStreetMap priors into
-                lane-level vector maps with geometry, semantics, and topology.
-              </p>
-              <div className="industry-value">
-                <strong>Why it matters for AV development</strong>
-                <p>It explores a scalable route for bootstrapping and updating HD map coverage without relying exclusively on repeated survey-vehicle collection.</p>
+              <div className="featured-project-top">
+                <div className="featured-project-copy">
+                  <h3>Learning HD Digital Twins from Global Maps</h3>
+                  <p className="project-summary">
+                    A multi-modal learning framework that transforms satellite imagery and imperfect OpenStreetMap priors into
+                    lane-level vector maps with geometry, semantics, and topology.
+                  </p>
+                  <div className="industry-value">
+                    <strong>Why it matters for AV development</strong>
+                    <p>It explores a scalable route for bootstrapping and updating HD map coverage without relying exclusively on repeated survey-vehicle collection.</p>
+                  </div>
+                </div>
+                <figure className="research-overview-figure">
+                  <img
+                    src="/hd-map-overview.jpg"
+                    alt="Isometric research overview showing satellite imagery and an imperfect global road-map prior transformed by a multi-modal learning model into a precise lane-level HD vector map across different cities."
+                  />
+                  <figcaption>Satellite + OSM prior · Multi-modal learning · HD vector map</figcaption>
+                </figure>
               </div>
-              <figure className="project-figure">
-                <img src="/map-generation-results.png" alt="HD map predictions compared with ground truth in Washington DC and Pittsburgh" />
-                <figcaption>Satellite + OSM input, ground truth, and model predictions across two cities.</figcaption>
-              </figure>
               <div className="metric-row" aria-label="Selected project results">
                 <div><strong>2,341</strong><span>aligned map tiles</span></div>
                 <div><strong>0.890</strong><span>geometry F1 at 2 m</span></div>

@@ -103,9 +103,6 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--accent); outli
 .project-links { display: flex; gap: 18px; margin-top: 22px; }
 .project-links a, .scholar-link { padding-bottom: 4px; border-bottom: 1px solid currentColor; font-size: 12px; font-weight: 700; }
 .project-links a:hover, .scholar-link:hover { color: var(--accent); }
-.project-figure { margin: 30px 0 0; border: 1px solid var(--line); background: #fff; }
-.project-figure img { display: block; width: 100%; max-height: 590px; object-fit: contain; }
-.project-figure figcaption { padding: 12px 15px; border-top: 1px solid var(--line); color: var(--muted); font-size: 11px; }
 .metric-row { display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 12px; border: 1px solid var(--line); }
 .metric-row div { padding: 18px; }
 .metric-row div + div { border-left: 1px solid var(--line); }
