@@ -323,23 +323,44 @@ export default function Home() {
             <h2>Education &amp; experience</h2>
           </div>
           <div className="background-grid">
-            <div>
-              <h3>Texas A&amp;M University</h3>
-              <p>Ph.D. in Civil and Environmental Engineering</p>
-              <span>Research / Teaching Assistant · 2023–Present</span>
+            <div className="education-item">
+              <div className="university-icon" aria-hidden="true">
+                <img src="/university-tamu.png" alt="" />
+              </div>
+              <div className="education-copy">
+                <h3>Texas A&amp;M University</h3>
+                <p>Ph.D. in Civil and Environmental Engineering</p>
+                <span>Research / Teaching Assistant · 2023–Present</span>
+              </div>
             </div>
-            <div>
-              <h3>Tongji University</h3>
-              <p>M.S. in Transportation Engineering</p>
-              <span>Research Assistant · 2020–2023</span>
+            <div className="education-item">
+              <div className="university-icon" aria-hidden="true">
+                <img src="/university-tongji.png" alt="" />
+              </div>
+              <div className="education-copy">
+                <h3>Tongji University</h3>
+                <p>M.S. in Transportation Engineering</p>
+                <span>Research Assistant · 2020–2023</span>
+              </div>
             </div>
-            <div>
-              <h3>Central South University</h3>
-              <p>B.S. in Logistics Engineering</p>
-              <span>2016–2020</span>
+            <div className="education-item">
+              <div className="university-icon" aria-hidden="true">
+                <img src="/university-csu.png" alt="" />
+              </div>
+              <div className="education-copy">
+                <h3>Central South University</h3>
+                <p>B.S. in Logistics Engineering</p>
+                <span>2016–2020</span>
+              </div>
             </div>
           </div>
-          <p className="personal-note">Outside research, I enjoy playing soccer and supporting Liverpool FC.</p>
+          <aside className="interests-block" aria-labelledby="interests-title">
+            <img className="interests-icon" src="/liverpool-fc.png" alt="Liverpool FC" />
+            <div>
+              <p className="interests-title" id="interests-title">Interests</p>
+              <p>I enjoy playing soccer and supporting Liverpool FC.</p>
+            </div>
+          </aside>
         </section>
 
         <section className="contact-section">
